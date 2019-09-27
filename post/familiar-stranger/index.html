@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Familiar Stranger | ChSyidea</title>
 <meta name="description" content="Stay Inspired" />
-<link rel="shortcut icon" href="https://ChSy990.github.io/favicon.ico?v=1569434164925">
+<link rel="shortcut icon" href="https://ChSy990.github.io/favicon.ico?v=1569611874939">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ChSy990.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://ChSy990.github.io">
-  <img class="avatar" src="https://ChSy990.github.io/images/avatar.png?v=1569434164925" alt="">
+  <img class="avatar" src="https://ChSy990.github.io/images/avatar.png?v=1569611874939" alt="">
   </a>
   <h1 class="site-title">
     ChSyidea
@@ -84,7 +84,7 @@
                 2019-09-26
               </span>
               <span>
-                1 min read
+                5 min read
               </span>
               
             </div>
@@ -95,10 +95,71 @@
 Course Name: Social &amp; Mobile Computing</p>
 <p>“Familiar Stranger” is a design concept which try to evoke people’s self-awareness of mobile addiction. It includes a IOS mobile app prototype and a smart case which made by RFduino.</p>
 <!-- more -->
+<blockquote>
+<p>slogan</p>
+</blockquote>
+<p><a href="">大图</a></p>
+<h2 id="teammates">Teammates</h2>
+<p>Shiqi Zheng, Yue Feng, Siying Hu, Muhammad Afiq Ainuddin Mohd Khashim</p>
+<h2 id="my-contribution">My Contribution</h2>
+<ul>
+<li>Run Qualitative and quantitative user research to better understand the problem and get inspired;</li>
+<li>Translate concepts into interactive prototypes and iterate;</li>
+<li>Data analysis for different IoT protocols test；</li>
+<li>Physical prototyping developing;</li>
+<li>UX/UI design, Wireframing, Application Flows;</li>
+<li>Learn using Arduino Uno and different sensors to detect the data, and then send to a computer or phone using different IoT protocols.</li>
+<li>First time to use the RFduino and Processing development and electronics on interactive installations by requiring physical interactions;</li>
+</ul>
+<p>😭Great thankful to my Tutor Pete, the develop of hardware is real hard.</p>
+<h2 id="process">Process</h2>
+<p><a href="">Process</a></p>
+<h2 id="context-research">Context Research</h2>
+<p>As we talked with Tutor and researched before, social textile as an inspiration for us to develop a design opportunity named “familiar stranger”. Our purpose is bringing people to build a new relationship and maintain their friendship in the real world instead of over-relying on social media application. Many people that they meet same people every day in the same place like in the school, the bus station but they never talked with each other or they lack the opportunity to chat with others. Our concept provides a chance for them to communicate with those people and enable them not addicted to social media.</p>
+<h2 id="scenario-user-research">Scenario &amp; User Research</h2>
+<p>In order to make our concept more attractive to inhabitants, our team member did a questionnaire to ascertain the form of our design, which is phone case. Hence, we linked our idea with the phone case that showed the above pictures. Candidates who have the same phone case they could adjust their current status with emoji such as happy to talk, sad today, really do not want to talk to anyone and etc, which they change the status and people could see their current status to choose whether or not chat with someone.</p>
+<h2 id="concept">Concept</h2>
+<p>The initial hypothesis of our group is to create a prototype of the mobile phone case that simulates the following figure, which consists of two parts, one is to display the light function of different colours, and the other is the display which can display different expression packs. The phone case which can display the users’ emotion, green means they are willing to chat with others, red means do not want to be disturbed. The user can change their emotion by click on the small button on the side of the phone case. People who see other’s phone case display the green light can talk with them without hesitation, while for those who make their phone case display red light can avoid some embarrassing situations.Thus, I build the physical prototype by using the RFduino and sensoring design.</p>
+<p>[图片]<br>
+The entire device was divided into two parts, one is an internal structure that contains the transformed lights controlled by RFdunio. One was an external structure, mainly to simulate the production of a mobile phone case.</p>
+<p>[图片]<br>
+This is the screen that I have intended to display the emojis that user choose. Due to the time limitation, I did not achieve our goal, but I will research and try to implement this function in the future.</p>
+<p>[图片]</p>
+<h2 id="code-guide">Code Guide</h2>
+<p>In order to achieve our concept, I set up two device in two file of Arduino named social_host and social_device. Then we initialised the Rfdunio in two file. More details ca view in the github. Like below:</p>
+<pre><code>device_t role = DEVICE0;
+device_t role = HOST;
+</code></pre>
+<p>Then I set up the three light in social_device.</p>
+<pre><code>int red_led = 2;
+int green_led = 3;
+int blue_led = 4;
+int current_led = red_led;
+char ledToSend = 0;
+</code></pre>
+<p>Next, I set up three pinmode for pressing in two file. Like:</p>
+<pre><code>void setup() { pinMode(button_a, INPUT);
+pinMode(red_led, OUTPUT);
+pinMode(green_led, OUTPUT);
+pinMode(blue_led, OUTPUT);
+</code></pre>
 
               </div>
               <div class="toc-container">
-                
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#teammates">Teammates</a></li>
+<li><a href="#my-contribution">My Contribution</a></li>
+<li><a href="#process">Process</a></li>
+<li><a href="#context-research">Context Research</a></li>
+<li><a href="#scenario-user-research">Scenario &amp; User Research</a></li>
+<li><a href="#concept">Concept</a></li>
+<li><a href="#code-guide">Code Guide</a></li>
+</ul>
+</li>
+</ul>
+
               </div>
             </div>
           </article>

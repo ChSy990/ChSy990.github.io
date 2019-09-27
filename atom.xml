@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ChSy990.github.io</id>
     <title>ChSyidea</title>
-    <updated>2019-09-25T17:58:09.914Z</updated>
+    <updated>2019-09-27T19:17:57.959Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ChSy990.github.io"/>
     <link rel="self" href="https://ChSy990.github.io/atom.xml"/>
@@ -33,11 +33,11 @@ Course: Introduction to Web Design</p>
         <updated>2019-09-25T17:53:40.000Z</updated>
         <summary type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
 Course: Human-Computer Interaction</p>
-<p>“Spoon Pets” is a conceptual interaction design of an application prototype that helps users develop productivity and overcome procrastination, therefore enables them to foster ethical behaviour. The prototype was built by using Adobe suit and sketch.</p>
+<p>“Spoon Pets” is a conceptual interaction design of an application prototype that helps users develop productivity and overcome procrastination, therefore enables them to foster ethical behaviour. Spoon Pets is a mobile app that overcomes procrastination by allowing users to effectively manage their schedules and facilitating their use of the Pomodoro Technique to limit the use of mobile phones during their mission. Users can earn points by using the Pomodoro timer to complete tasks that can be used to raise virtual mobile pets. Whenever the points reach a certain amount, the app can donate a certain amount to non-profit organizations, allowing users to help stray animals in entertainment. The prototype was built by using Adobe suit and sketch.</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
 Course: Human-Computer Interaction</p>
-<p>“Spoon Pets” is a conceptual interaction design of an application prototype that helps users develop productivity and overcome procrastination, therefore enables them to foster ethical behaviour. The prototype was built by using Adobe suit and sketch.</p>
+<p>“Spoon Pets” is a conceptual interaction design of an application prototype that helps users develop productivity and overcome procrastination, therefore enables them to foster ethical behaviour. Spoon Pets is a mobile app that overcomes procrastination by allowing users to effectively manage their schedules and facilitating their use of the Pomodoro Technique to limit the use of mobile phones during their mission. Users can earn points by using the Pomodoro timer to complete tasks that can be used to raise virtual mobile pets. Whenever the points reach a certain amount, the app can donate a certain amount to non-profit organizations, allowing users to help stray animals in entertainment. The prototype was built by using Adobe suit and sketch.</p>
 ]]></content>
     </entry>
     <entry>
@@ -46,11 +46,13 @@ Course: Human-Computer Interaction</p>
         <link href="https://ChSy990.github.io/post/anxiety-eliminator-game">
         </link>
         <updated>2019-09-25T17:51:33.000Z</updated>
-        <summary type="html"><![CDATA[<p>[July 2017 - November 2017]</p>
-<p>“Anxiety Eliminator” is an interactive&amp;digital game prototype built by using the Unity(C#) and involve some forms of physical interaction by using the Leap Motion and MakeyMakey.</p>
+        <summary type="html"><![CDATA[<p>[July 2017 - November 2017]<br>
+Personal Happy Project</p>
+<p>Anxiety Eliminator is an interactive &amp; digital game prototype built by using the Unity and involve some form of physical interaction by using the Leap Motion and MakeyMakey. Players need to match the music and tap the schematic pattern in the game prototype. The player operates the digital game prototype mainly by their gestures activities or by hitting physical objects.</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>[July 2017 - November 2017]</p>
-<p>“Anxiety Eliminator” is an interactive&amp;digital game prototype built by using the Unity(C#) and involve some forms of physical interaction by using the Leap Motion and MakeyMakey.</p>
+        <content type="html"><![CDATA[<p>[July 2017 - November 2017]<br>
+Personal Happy Project</p>
+<p>Anxiety Eliminator is an interactive &amp; digital game prototype built by using the Unity and involve some form of physical interaction by using the Leap Motion and MakeyMakey. Players need to match the music and tap the schematic pattern in the game prototype. The player operates the digital game prototype mainly by their gestures activities or by hitting physical objects.</p>
 ]]></content>
     </entry>
     <entry>
@@ -81,21 +83,6 @@ Course: Design thinking</p>
         <content type="html"><![CDATA[<p>[February 2019 - June 2018]<br>
 Course: Design thinking</p>
 <p>xxxxxxxxxxxxxxxx</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Old Queensland]]></title>
-        <id>https://ChSy990.github.io/post/the-old-queensland</id>
-        <link href="https://ChSy990.github.io/post/the-old-queensland">
-        </link>
-        <updated>2019-09-25T17:48:22.000Z</updated>
-        <summary type="html"><![CDATA[<p>[July 2017 - November 2017]<br>
-Course: Design Computing Studio 1</p>
-<p>The Old Queensland is an interactive web application built using the State Library of Queensland. The objective of the website is allowing users to explore historical information through various interesting interactions, visualizing digital records and offering an aesthetic visual representation for users. At the meantime, this project tends to provide a better browsing and learning experience for the target customers of the website.</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>[July 2017 - November 2017]<br>
-Course: Design Computing Studio 1</p>
-<p>The Old Queensland is an interactive web application built using the State Library of Queensland. The objective of the website is allowing users to explore historical information through various interesting interactions, visualizing digital records and offering an aesthetic visual representation for users. At the meantime, this project tends to provide a better browsing and learning experience for the target customers of the website.</p>
 ]]></content>
     </entry>
     <entry>
