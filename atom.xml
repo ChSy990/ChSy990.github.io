@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ChSy990.github.io</id>
     <title>ChSyidea</title>
-    <updated>2019-09-28T18:33:55.595Z</updated>
+    <updated>2019-09-28T18:55:54.960Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ChSy990.github.io"/>
     <link rel="self" href="https://ChSy990.github.io/atom.xml"/>
@@ -92,21 +92,6 @@ Course: Digital Prototyping</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The Green Corner]]></title>
-        <id>https://ChSy990.github.io/post/the-green-corner</id>
-        <link href="https://ChSy990.github.io/post/the-green-corner">
-        </link>
-        <updated>2019-09-25T17:49:14.000Z</updated>
-        <summary type="html"><![CDATA[<p>[February 2019 - June 2018]<br>
-Course: Design thinking</p>
-<p>xxxxxxxxxxxxxxxx</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>[February 2019 - June 2018]<br>
-Course: Design thinking</p>
-<p>xxxxxxxxxxxxxxxx</p>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[BeUpStanding]]></title>
         <id>https://ChSy990.github.io/post/beupstanding</id>
         <link href="https://ChSy990.github.io/post/beupstanding">
@@ -134,6 +119,21 @@ Course Name: Social &amp; Mobile Computing</p>
         <content type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
 Course Name: Social &amp; Mobile Computing</p>
 <p>“Familiar Stranger” is a design concept which try to evoke people’s self-awareness of mobile addiction. It includes a IOS mobile app prototype and a smart case which made by RFduino.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fluency]]></title>
+        <id>https://ChSy990.github.io/post/fluency</id>
+        <link href="https://ChSy990.github.io/post/fluency">
+        </link>
+        <updated>2019-09-25T17:42:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>[February 2019 - July 2019]<br>
+Course: Physical Computing</p>
+<p>“Fluency” is a gamified experience in which users will be given a sentence on a screen with a single word missing. This is an open-end game for language beginner to learn new language by using physical object.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[February 2019 - July 2019]<br>
+Course: Physical Computing</p>
+<p>“Fluency” is a gamified experience in which users will be given a sentence on a screen with a single word missing. This is an open-end game for language beginner to learn new language by using physical object.</p>
 ]]></content>
     </entry>
 </feed>
