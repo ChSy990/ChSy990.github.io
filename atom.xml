@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ChSy990.github.io</id>
     <title>ChSyidea</title>
-    <updated>2019-09-27T19:17:57.959Z</updated>
+    <updated>2019-09-28T18:33:55.595Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ChSy990.github.io"/>
     <link rel="self" href="https://ChSy990.github.io/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://ChSy990.github.io/images/avatar.png</logo>
     <icon>https://ChSy990.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, ChSyidea</rights>
+    <entry>
+        <title type="html"><![CDATA[Standing App]]></title>
+        <id>https://ChSy990.github.io/post/standing-app</id>
+        <link href="https://ChSy990.github.io/post/standing-app">
+        </link>
+        <updated>2019-09-28T18:28:25.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cognition in HCI]]></title>
+        <id>https://ChSy990.github.io/post/cognition-in-hci</id>
+        <link href="https://ChSy990.github.io/post/cognition-in-hci">
+        </link>
+        <updated>2019-09-28T18:14:27.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Social Case]]></title>
+        <id>https://ChSy990.github.io/post/social-case</id>
+        <link href="https://ChSy990.github.io/post/social-case">
+        </link>
+        <updated>2019-09-28T18:13:53.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[The Little Prince]]></title>
         <id>https://ChSy990.github.io/post/the-little-prince</id>
@@ -113,36 +134,6 @@ Course Name: Social &amp; Mobile Computing</p>
         <content type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
 Course Name: Social &amp; Mobile Computing</p>
 <p>“Familiar Stranger” is a design concept which try to evoke people’s self-awareness of mobile addiction. It includes a IOS mobile app prototype and a smart case which made by RFduino.</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fluency]]></title>
-        <id>https://ChSy990.github.io/post/fluency</id>
-        <link href="https://ChSy990.github.io/post/fluency">
-        </link>
-        <updated>2019-09-25T17:42:08.000Z</updated>
-        <summary type="html"><![CDATA[<p>[February 2019 - July 2019]<br>
-Course: Physical Computing</p>
-<p>“Fluency” is a gamified experience in which users will be given a sentence on a screen with a single word missing. This is an open-end game for language beginner to learn new language by using physical object.</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>[February 2019 - July 2019]<br>
-Course: Physical Computing</p>
-<p>“Fluency” is a gamified experience in which users will be given a sentence on a screen with a single word missing. This is an open-end game for language beginner to learn new language by using physical object.</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Standing Cushion]]></title>
-        <id>https://ChSy990.github.io/post/standing-cushion</id>
-        <link href="https://ChSy990.github.io/post/standing-cushion">
-        </link>
-        <updated>2019-09-25T17:33:26.000Z</updated>
-        <summary type="html"><![CDATA[<p>[July 2018 - July 2019]<br>
-Master Thesis</p>
-<p>&quot;How to develop a Device to remind Elderly people do more activities when they sitting for long time in home?&quot; is the research question. This thesis is meant to address these problems by analysing the required infrastructure of an Internet of Things in home, which was developed following concepts of user-centered design and usability. After the analysis, presenting a new assistive system based on Embed Interaction tech for enabling low-cost sensing on everyday objects.</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>[July 2018 - July 2019]<br>
-Master Thesis</p>
-<p>&quot;How to develop a Device to remind Elderly people do more activities when they sitting for long time in home?&quot; is the research question. This thesis is meant to address these problems by analysing the required infrastructure of an Internet of Things in home, which was developed following concepts of user-centered design and usability. After the analysis, presenting a new assistive system based on Embed Interaction tech for enabling low-cost sensing on everyday objects.</p>
 ]]></content>
     </entry>
 </feed>
