@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ChSy990.github.io</id>
     <title>ChSyidea</title>
-    <updated>2019-09-28T20:19:44.049Z</updated>
+    <updated>2019-09-28T20:34:37.982Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ChSy990.github.io"/>
     <link rel="self" href="https://ChSy990.github.io/atom.xml"/>
@@ -11,54 +11,33 @@
     <icon>https://ChSy990.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, ChSyidea</rights>
     <entry>
-        <title type="html"><![CDATA[Standing App]]></title>
-        <id>https://ChSy990.github.io/post/standing-app</id>
-        <link href="https://ChSy990.github.io/post/standing-app">
+        <title type="html"><![CDATA[Standing Cushion]]></title>
+        <id>https://ChSy990.github.io/post/standing-cushion</id>
+        <link href="https://ChSy990.github.io/post/standing-cushion">
         </link>
-        <updated>2019-09-28T18:28:25.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cognition in HCI]]></title>
-        <id>https://ChSy990.github.io/post/cognition-in-hci</id>
-        <link href="https://ChSy990.github.io/post/cognition-in-hci">
-        </link>
-        <updated>2019-09-28T18:14:27.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Social Case]]></title>
-        <id>https://ChSy990.github.io/post/social-case</id>
-        <link href="https://ChSy990.github.io/post/social-case">
-        </link>
-        <updated>2019-09-28T18:13:53.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Little Prince]]></title>
-        <id>https://ChSy990.github.io/post/the-little-prince</id>
-        <link href="https://ChSy990.github.io/post/the-little-prince">
-        </link>
-        <updated>2019-09-25T17:54:34.000Z</updated>
-        <summary type="html"><![CDATA[<p>[February 2018 - June 2018]<br>
-Course: Introduction to Web Design</p>
-<p>The Little Prince is an interactive story website for children aged 13 and under. The project aims to design a digital version of a printed “choose users own adventure” book. The entire website was designed through three iterations process to explore how it can most effectively translate the book from physical to digital form.</p>
+        <updated>2019-07-15T17:33:26.000Z</updated>
+        <summary type="html"><![CDATA[<p>[July 2018 - July 2019]<br>
+Master Thesis</p>
+<p>&quot;How to develop a Device to remind Elderly people do more activities when they sitting for long time in home?&quot; is the research question. This thesis is meant to address these problems by analysing the required infrastructure of an Internet of Things in home, which was developed following concepts of user-centered design and usability. After the analysis, presenting a new assistive system based on Embed Interaction tech for enabling low-cost sensing on everyday objects.</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>[February 2018 - June 2018]<br>
-Course: Introduction to Web Design</p>
-<p>The Little Prince is an interactive story website for children aged 13 and under. The project aims to design a digital version of a printed “choose users own adventure” book. The entire website was designed through three iterations process to explore how it can most effectively translate the book from physical to digital form.</p>
+        <content type="html"><![CDATA[<p>[July 2018 - July 2019]<br>
+Master Thesis</p>
+<p>&quot;How to develop a Device to remind Elderly people do more activities when they sitting for long time in home?&quot; is the research question. This thesis is meant to address these problems by analysing the required infrastructure of an Internet of Things in home, which was developed following concepts of user-centered design and usability. After the analysis, presenting a new assistive system based on Embed Interaction tech for enabling low-cost sensing on everyday objects.</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Spoon Pets]]></title>
-        <id>https://ChSy990.github.io/post/spoon-pets</id>
-        <link href="https://ChSy990.github.io/post/spoon-pets">
+        <title type="html"><![CDATA[Fluency]]></title>
+        <id>https://ChSy990.github.io/post/fluency</id>
+        <link href="https://ChSy990.github.io/post/fluency">
         </link>
-        <updated>2019-09-25T17:53:40.000Z</updated>
-        <summary type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
-Course: Human-Computer Interaction</p>
-<p>“Spoon Pets” is a conceptual interaction design of an application prototype that helps users develop productivity and overcome procrastination, therefore enables them to foster ethical behaviour. Spoon Pets is a mobile app that overcomes procrastination by allowing users to effectively manage their schedules and facilitating their use of the Pomodoro Technique to limit the use of mobile phones during their mission. Users can earn points by using the Pomodoro timer to complete tasks that can be used to raise virtual mobile pets. Whenever the points reach a certain amount, the app can donate a certain amount to non-profit organizations, allowing users to help stray animals in entertainment. The prototype was built by using Adobe suit and sketch.</p>
+        <updated>2019-06-29T17:42:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>[February 2019 - July 2019]<br>
+Course: Physical Computing</p>
+<p>Fluency is a language learning system aimed at beginners in the classroom. In this intended context, a teacher would guide students through the process of using the system. In terms of the system itself, users are shown a digital scene with a sentence representing a scenario. However, the sentence has a word missing. Users will scan augmented blocks each representing a character in an attempt to build the missing word. If the user builds the correct word than the scene will change to represent the overall sentence and a success message will be displayed. If the user fails to build a word, a generic ‘failure’ scenario will be shown and the user will be prompted to try again. Additionally, if a word is built that makes sense within the sentence but is not the correct word, the user will still be prompted to try again but will also be shown a unique scenario depending on the word. There are two levels of difficulty, the first level allows users to spend as long as they need to build the word whilst the second adds a timer. Before the game starts, the teacher can select the level and word-type and can assist the students in general. Overall the concept is aimed to enhance the language learning experience, making it more effective and engaging.</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
-Course: Human-Computer Interaction</p>
-<p>“Spoon Pets” is a conceptual interaction design of an application prototype that helps users develop productivity and overcome procrastination, therefore enables them to foster ethical behaviour. Spoon Pets is a mobile app that overcomes procrastination by allowing users to effectively manage their schedules and facilitating their use of the Pomodoro Technique to limit the use of mobile phones during their mission. Users can earn points by using the Pomodoro timer to complete tasks that can be used to raise virtual mobile pets. Whenever the points reach a certain amount, the app can donate a certain amount to non-profit organizations, allowing users to help stray animals in entertainment. The prototype was built by using Adobe suit and sketch.</p>
+        <content type="html"><![CDATA[<p>[February 2019 - July 2019]<br>
+Course: Physical Computing</p>
+<p>Fluency is a language learning system aimed at beginners in the classroom. In this intended context, a teacher would guide students through the process of using the system. In terms of the system itself, users are shown a digital scene with a sentence representing a scenario. However, the sentence has a word missing. Users will scan augmented blocks each representing a character in an attempt to build the missing word. If the user builds the correct word than the scene will change to represent the overall sentence and a success message will be displayed. If the user fails to build a word, a generic ‘failure’ scenario will be shown and the user will be prompted to try again. Additionally, if a word is built that makes sense within the sentence but is not the correct word, the user will still be prompted to try again but will also be shown a unique scenario depending on the word. There are two levels of difficulty, the first level allows users to spend as long as they need to build the word whilst the second adds a timer. Before the game starts, the teacher can select the level and word-type and can assist the students in general. Overall the concept is aimed to enhance the language learning experience, making it more effective and engaging.</p>
 ]]></content>
     </entry>
     <entry>
@@ -66,7 +45,7 @@ Course: Human-Computer Interaction</p>
         <id>https://ChSy990.github.io/post/anxiety-eliminator-game</id>
         <link href="https://ChSy990.github.io/post/anxiety-eliminator-game">
         </link>
-        <updated>2019-09-25T17:51:33.000Z</updated>
+        <updated>2018-12-29T17:51:33.000Z</updated>
         <summary type="html"><![CDATA[<p>[July 2017 - November 2017]<br>
 Personal Happy Project</p>
 <p>Anxiety Eliminator is an interactive &amp; digital game prototype built by using the Unity and involve some form of physical interaction by using the Leap Motion and MakeyMakey. Players need to match the music and tap the schematic pattern in the game prototype. The player operates the digital game prototype mainly by their gestures activities or by hitting physical objects.</p>
@@ -77,41 +56,18 @@ Personal Happy Project</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Super Survivor 2.5D Game]]></title>
-        <id>https://ChSy990.github.io/post/super-survivor-25d-game</id>
-        <link href="https://ChSy990.github.io/post/super-survivor-25d-game">
+        <title type="html"><![CDATA[Social Case]]></title>
+        <id>https://ChSy990.github.io/post/social-case</id>
+        <link href="https://ChSy990.github.io/post/social-case">
         </link>
-        <updated>2019-09-25T17:50:56.000Z</updated>
-        <summary type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
-Course: Digital Prototyping</p>
-<p>“Super Survivor Game” is a small map adventure game of website. It was built by using the The HTML5 Creation Engine(PixiJS) and involve physical interaction by using the MakeyMakey.</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
-Course: Digital Prototyping</p>
-<p>“Super Survivor Game” is a small map adventure game of website. It was built by using the The HTML5 Creation Engine(PixiJS) and involve physical interaction by using the MakeyMakey.</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[BeUpStanding]]></title>
-        <id>https://ChSy990.github.io/post/beupstanding</id>
-        <link href="https://ChSy990.github.io/post/beupstanding">
-        </link>
-        <updated>2019-09-25T17:47:14.000Z</updated>
-        <summary type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
-Course: Design Computing Studio 3 - Build</p>
-<p>“BeAppStanding” is an iOS mobile application to further help the target users to sit less and stand more. This application and physical prototype were development by using native platforms (Swift,Xcode). The key component of my responsibility is to consider how to enhance the user experience and design the data visualisation by using emotion design and interface usability. In terms of it, the system can improve the cognition of target audience.</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
-Course: Design Computing Studio 3 - Build</p>
-<p>“BeAppStanding” is an iOS mobile application to further help the target users to sit less and stand more. This application and physical prototype were development by using native platforms (Swift,Xcode). The key component of my responsibility is to consider how to enhance the user experience and design the data visualisation by using emotion design and interface usability. In terms of it, the system can improve the cognition of target audience.</p>
-]]></content>
+        <updated>2018-12-09T18:13:53.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Familiar Stranger]]></title>
         <id>https://ChSy990.github.io/post/familiar-stranger</id>
         <link href="https://ChSy990.github.io/post/familiar-stranger">
         </link>
-        <updated>2019-09-25T17:46:39.000Z</updated>
+        <updated>2018-12-09T17:46:39.000Z</updated>
         <summary type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
 Course Name: Social &amp; Mobile Computing</p>
 <p>“Familiar Stranger” is a design concept which try to evoke people’s self-awareness of mobile addiction. It includes a IOS mobile app prototype and a smart case which made by RFduino.</p>
@@ -122,18 +78,62 @@ Course Name: Social &amp; Mobile Computing</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fluency]]></title>
-        <id>https://ChSy990.github.io/post/fluency</id>
-        <link href="https://ChSy990.github.io/post/fluency">
+        <title type="html"><![CDATA[Standing App]]></title>
+        <id>https://ChSy990.github.io/post/standing-app</id>
+        <link href="https://ChSy990.github.io/post/standing-app">
         </link>
-        <updated>2019-09-25T17:42:08.000Z</updated>
-        <summary type="html"><![CDATA[<p>[February 2019 - July 2019]<br>
-Course: Physical Computing</p>
-<p>Fluency is a language learning system aimed at beginners in the classroom. In this intended context, a teacher would guide students through the process of using the system. In terms of the system itself, users are shown a digital scene with a sentence representing a scenario. However, the sentence has a word missing. Users will scan augmented blocks each representing a character in an attempt to build the missing word. If the user builds the correct word than the scene will change to represent the overall sentence and a success message will be displayed. If the user fails to build a word, a generic ‘failure’ scenario will be shown and the user will be prompted to try again. Additionally, if a word is built that makes sense within the sentence but is not the correct word, the user will still be prompted to try again but will also be shown a unique scenario depending on the word. There are two levels of difficulty, the first level allows users to spend as long as they need to build the word whilst the second adds a timer. Before the game starts, the teacher can select the level and word-type and can assist the students in general. Overall the concept is aimed to enhance the language learning experience, making it more effective and engaging.</p>
+        <updated>2018-11-29T18:28:25.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[BeUpStanding]]></title>
+        <id>https://ChSy990.github.io/post/beupstanding</id>
+        <link href="https://ChSy990.github.io/post/beupstanding">
+        </link>
+        <updated>2018-11-29T17:47:14.000Z</updated>
+        <summary type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
+Course: Design Computing Studio 3 - Build</p>
+<p>“BeAppStanding” is an iOS mobile application to further help the target users to sit less and stand more. This application and physical prototype were development by using native platforms (Swift,Xcode). The key component of my responsibility is to consider how to enhance the user experience and design the data visualisation by using emotion design and interface usability. In terms of it, the system can improve the cognition of target audience.</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>[February 2019 - July 2019]<br>
-Course: Physical Computing</p>
-<p>Fluency is a language learning system aimed at beginners in the classroom. In this intended context, a teacher would guide students through the process of using the system. In terms of the system itself, users are shown a digital scene with a sentence representing a scenario. However, the sentence has a word missing. Users will scan augmented blocks each representing a character in an attempt to build the missing word. If the user builds the correct word than the scene will change to represent the overall sentence and a success message will be displayed. If the user fails to build a word, a generic ‘failure’ scenario will be shown and the user will be prompted to try again. Additionally, if a word is built that makes sense within the sentence but is not the correct word, the user will still be prompted to try again but will also be shown a unique scenario depending on the word. There are two levels of difficulty, the first level allows users to spend as long as they need to build the word whilst the second adds a timer. Before the game starts, the teacher can select the level and word-type and can assist the students in general. Overall the concept is aimed to enhance the language learning experience, making it more effective and engaging.</p>
+        <content type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
+Course: Design Computing Studio 3 - Build</p>
+<p>“BeAppStanding” is an iOS mobile application to further help the target users to sit less and stand more. This application and physical prototype were development by using native platforms (Swift,Xcode). The key component of my responsibility is to consider how to enhance the user experience and design the data visualisation by using emotion design and interface usability. In terms of it, the system can improve the cognition of target audience.</p>
 ]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Super Survivor 2.5D Game]]></title>
+        <id>https://ChSy990.github.io/post/super-survivor-25d-game</id>
+        <link href="https://ChSy990.github.io/post/super-survivor-25d-game">
+        </link>
+        <updated>2018-11-19T17:50:56.000Z</updated>
+        <summary type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
+Course: Digital Prototyping</p>
+<p>“Super Survivor Game” is a small map adventure game of website. It was built by using the The HTML5 Creation Engine(PixiJS) and involve physical interaction by using the MakeyMakey.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[July 2018 - November 2018]<br>
+Course: Digital Prototyping</p>
+<p>“Super Survivor Game” is a small map adventure game of website. It was built by using the The HTML5 Creation Engine(PixiJS) and involve physical interaction by using the MakeyMakey.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Little Prince]]></title>
+        <id>https://ChSy990.github.io/post/the-little-prince</id>
+        <link href="https://ChSy990.github.io/post/the-little-prince">
+        </link>
+        <updated>2018-07-07T17:54:34.000Z</updated>
+        <summary type="html"><![CDATA[<p>[February 2018 - June 2018]<br>
+Course: Introduction to Web Design</p>
+<p>The Little Prince is an interactive story website for children aged 13 and under. The project aims to design a digital version of a printed “choose users own adventure” book. The entire website was designed through three iterations process to explore how it can most effectively translate the book from physical to digital form.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[February 2018 - June 2018]<br>
+Course: Introduction to Web Design</p>
+<p>The Little Prince is an interactive story website for children aged 13 and under. The project aims to design a digital version of a printed “choose users own adventure” book. The entire website was designed through three iterations process to explore how it can most effectively translate the book from physical to digital form.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cognition in HCI]]></title>
+        <id>https://ChSy990.github.io/post/cognition-in-hci</id>
+        <link href="https://ChSy990.github.io/post/cognition-in-hci">
+        </link>
+        <updated>2018-07-04T18:14:27.000Z</updated>
     </entry>
 </feed>

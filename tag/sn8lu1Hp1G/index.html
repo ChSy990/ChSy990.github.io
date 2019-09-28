@@ -1,0 +1,178 @@
+<html>
+  <head>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Data Visualization | ChSyidea</title>
+<meta name="description" content="Stay Inspired" />
+<link rel="shortcut icon" href="https://ChSy990.github.io/favicon.ico?v=1569702868276">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://ChSy990.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://ChSy990.github.io">
+  <img class="avatar" src="https://ChSy990.github.io/images/avatar.png?v=1569702868276" alt="">
+  </a>
+  <h1 class="site-title">
+    ChSyidea
+  </h1>
+  <p class="site-description">
+    Stay Inspired
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/post/about" class="menu">
+          About
+        </a>
+      
+    
+      
+        <a href="/post/summary" class="menu">
+          Summary
+        </a>
+      
+    
+      
+        <a href="https://ChSy990.github.io/archives" class="menu">
+          Posts
+        </a>
+      
+    
+      
+        <a href="https://ChSy990.github.io/tags" class="menu">
+          Tags
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/ChSy990" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="current-tag-container">
+            <h2 class="title">
+                标签：# Data Visualization
+            </h2> 
+        </div>
+        <div class="post-container">
+  
+    <article class="post">
+      <a href="https://ChSy990.github.io/post/beupstanding">
+        <h2 class="post-title">BeUpStanding</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2018-11-30
+        </span>
+        <span>
+          9 min read
+        </span>
+        
+          <a href="https://ChSy990.github.io/tag/8pkgnz6oV" class="post-tag">
+            # App
+          </a>
+        
+          <a href="https://ChSy990.github.io/tag/JbST7UdbZS" class="post-tag">
+            # Health
+          </a>
+        
+          <a href="https://ChSy990.github.io/tag/b3cMYrm8lR" class="post-tag">
+            # User Experience
+          </a>
+        
+          <a href="https://ChSy990.github.io/tag/sn8lu1Hp1G" class="post-tag">
+            # Data Visualization
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <p>[July 2018 - November 2018]<br>
+Course: Design Computing Studio 3 - Build</p>
+<p>“BeAppStanding” is an iOS mobile application to further help the target users to sit less and stand more. This application and physical prototype were development by using native platforms (Swift,Xcode). The key component of my responsibility is to consider how to enhance the user experience and design the data visualisation by using emotion design and interface usability. In terms of it, the system can improve the cognition of target audience.</p>
+
+      </div>
+    </article>
+  
+</div>
+
+        <div class="pagination-container">
+  
+  
+</div>
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Sying</a> | 
+  <a class="rss" href="https://ChSy990.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
