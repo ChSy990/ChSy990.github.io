@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fluency Journal - 1 | ChSyidea</title>
+<meta name="description" content="Stay Inspired" />
+<link rel="shortcut icon" href="https://ChSy990.github.io/favicon.ico?v=1569791006498">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://ChSy990.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://ChSy990.github.io">
+  <img class="avatar" src="https://ChSy990.github.io/images/avatar.png?v=1569791006498" alt="">
+  </a>
+  <h1 class="site-title">
+    ChSyidea
+  </h1>
+  <p class="site-description">
+    Stay Inspired
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/post/about" class="menu">
+          About
+        </a>
+      
+    
+      
+        <a href="/post/summary" class="menu">
+          Summary
+        </a>
+      
+    
+      
+        <a href="https://ChSy990.github.io/archives" class="menu">
+          Posts
+        </a>
+      
+    
+      
+        <a href="https://ChSy990.github.io/tags" class="menu">
+          Tags
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/ChSy990" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Fluency Journal - 1
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-03-13
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>Today before class we were assigned our teams and themes for our project. Fortunately, I was able to get my first preference of theme which was 'Augmented Physical Props'. We were also given an 'Emotion' theme which was likely a preference for some of the other team members. These themes fit together very well as an 'Augmented Physical Prop which convokes emotions' is a broad enough field to allow for many different ideas and innovations.</p>
+<p>Before discussing themes, we had a guest speaker by the name of Bashkim Isai, Bash was a former student who had taken the course many years ago. Bash has been working in the physical computing industry for several years and shared a lot of insight into various topics such as; How to get a job after university, How to market ourselves and general advice on physical computing and the course. His insights were really interesting and can definitely be applied in all of our lives. I specifically asked a question about how we are meant to find our 'special thing'. His answer was very meaningful for me, he said that our special thing will change depending on what we are doing, who we are talking to etc... I realised that I need to expose myself to more different situations, both social and academic as my special thing could be just around the corner.</p>
+<p>Afterwards, we broke up into our teams and discussed many things such as code of conduct, communication channels, personal skills and strengths and of course; potential concepts. Right from the bat, we began talking about possibly working in the field of teaching language. All of us have an Asian background and have experienced learning a new language in one way or another. Hence, it was a topic that resonated with all of us.</p>
+<p>After some discussion we came with a general concept of possibly having some sort of building block/card (prop) which has a word on it (in the language that is being learned). Users would need to put props together to form a sentence. These blocks would be detected in some way and when a sentence is formed, a picture representing the sentence could be displayed on a screen. This will give the users some visual feedback and would be an engaging way to learn languages. As an example: If a user constructed a sentence saying 'I'm walking to the park'... the screen will display a person walking towards a park. If the user makes a mistake, advice can be given to the user via the screen too.</p>
+<p>After coming up with a base idea, the team exchanged details and started writing our code of conduct document. This course is soooo cool💪</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://ChSy990.github.io/post/anxiety-eliminator-game">
+              <h3 class="post-title">
+                Anxiety Eliminator Game
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Sying</a> | 
+  <a class="rss" href="https://ChSy990.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

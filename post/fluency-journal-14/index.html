@@ -1,0 +1,237 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fluency Journal - 14 | ChSyidea</title>
+<meta name="description" content="Stay Inspired" />
+<link rel="shortcut icon" href="https://ChSy990.github.io/favicon.ico?v=1569791006498">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://ChSy990.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://ChSy990.github.io">
+  <img class="avatar" src="https://ChSy990.github.io/images/avatar.png?v=1569791006498" alt="">
+  </a>
+  <h1 class="site-title">
+    ChSyidea
+  </h1>
+  <p class="site-description">
+    Stay Inspired
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/post/about" class="menu">
+          About
+        </a>
+      
+    
+      
+        <a href="/post/summary" class="menu">
+          Summary
+        </a>
+      
+    
+      
+        <a href="https://ChSy990.github.io/archives" class="menu">
+          Posts
+        </a>
+      
+    
+      
+        <a href="https://ChSy990.github.io/tags" class="menu">
+          Tags
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/ChSy990" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Fluency Journal - 14
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-05-17
+              </span>
+              <span>
+                10 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>This week I completed an alternative plan to the RFID technology part. Because our team members cannot guarantee he can finish the tech part. This means that our pre-planned RFID function may not be completed. Thus, I completed the connections between the RFID and the Particle Photon. Moreover, use the command input by the keyboard as a signal source to input the Korean words. At first, I thought this part was difficult, but according to the previous experience of using Particle, it was not much different from my previous implementation and plan. Moreover, I can also use Photon and Particle Console to return to the event with wifi control（or control by IFTTT/Particle） and using the database（Particle Cloud or MySQL） to store the data.</p>
+<p>Besides, I completed the new character animation. Based on the results of the group discussion, I made an animation effect of the character holding the coffee and walking. Also, in order to more vividly represent the game scene, I designed some character expressions(the character face) and created a new character skin. I will create a lot of new character skins and character designs in our team, Google Drive. In this way, Alan can directly select the PSD file to use, and directly apply the new character model appearance in Unity to create a new character. I hope I can provide more help to Alan.</p>
+<p>Thanks a lot for the help of Lorna and Alison, Alison and I  built the Frame and can use the Rear Project for projection in the weekend. Fortunately, I finished and knew the hardware prototype of RFID，using cable and size this week. So I can how to the built Frame with RFID part. Then, I start to design the useful concept and implementation of physical interaction with Frame. The details about final Installation and interaction methods can see the next blog in this week (Week 11 - Working in Process: Final Physical Prototype). Also, I completed a unique design such as UI of game and Game Menu. The worklist is shown below. Because too many tasks need to do this week are too complicated, I record one part in the blog every time I complete a task. If I do not sort out the work I do, I can easily forget it.</p>
+<p>1.Research RFID Material<br>
+2.RFID Tech Building<br>
+3.Game Menu<br>
+4.Build the mode - Character Waiter Animation<br>
+5.Build the mode - Character Face<br>
+6.Completed the Physical Concept and Interaction Design</p>
+<hr>
+<h2 id="research-rfid-material">Research RFID Material</h2>
+<p>We finalized the two materials used to ensure that the two materials did not affect the signal and use of the RFID. Because our goal is to receive the signal immediately when the user places the square on the shelf. One is the wooden box I bought with Alison. The cube is very lightweight, and we can laser a groove on its surface to place the RFID reader, and finally, a layer of the surface can be used. Another option is to use laser cutting to directly print the Korean text on the surface of the cube and attach the Tag to the inside. I completed the laser cut block design and planned to complete the block production. I will adjust the Block used according to the user's test.</p>
+<h2 id="rfid-tech-building">RFID Tech Building</h2>
+<p>I found three different RFID tutorials in Particle's Library and experimented with the instructions. My goal is to complete the connection of One-Photon and RFID Reader this week and successfully receive signals from the RFID Tag. I decide to use one Photon as a hardware prototype which connects with the Mifare RFID-RC522 reader module. Finally, the reader is used to read the UID code of the Mifare Tag. As my concept, the Photon NO.1 use the Particle. Publish function to transfer the RFID data to the database, and Photon No.2 use the Particle. Subscribe function to obtain the database information. Each RFID Tag represents a button on a Korean keyboard, while in Korean, there are two ways of accented and lightly pronounced, so I need to make at least 52 keystrokes. The sketch of function below:</p>
+<figure data-type="image" tabindex="1"><img src="https://i.imgur.com/CtikM80.png" alt=""></figure>
+<p>This week I complete the No.1 Photon, and it can publish the data to the computer. The PINs to Photon No.1 and wiring below:<br>
+<img src="https://i.imgur.com/3Lgq9Xu.png" alt=""></p>
+<figure data-type="image" tabindex="2"><img src="https://i.imgur.com/7YVY8Ir.png" alt=""></figure>
+<p>In the Particle WebIDE, a suitable library is provided so that I can quickly test the examples attached to the library. However, during the test, I decided to read the particle community again and then changed Libary to &quot;RFID.h&quot;.</p>
+<p><img src="https://i.imgur.com/6v0utKi.png" alt=""><br>
+<img src="https://i.imgur.com/TOrGlL0.png" alt=""></p>
+<p>However, my database is not built, and there is no setting, so I cannot see the RFID Tag information in the Particle Event, and I cannot complete the Flash Tag. So I used the monitor in the Arduino IDE to complete the hardware test.<br>
+<img src="https://i.imgur.com/cjfxSVV.png" alt=""></p>
+<h2 id="game-menu">Game Menu</h2>
+<p>This week I also completed two game's menu design and background image design and provided it to Alan to complete the game's front end and interface design. After this week's work, our Unity game has a complete process. In order to make the game scene of Low Poly more refined, I have reserved much new interface and put the most typical scene in our game. Some game interfaces I do not think it is too complicated, or the functionality on the same interface cannot be too much. So I think that our game can achieve no more than three functions on the same page, too many functions, the player will be particularly annoyed when it comes to this page. I did empathy. If I am a player, it would be enough for me (the player) to get the desired function on one page. However, if it is a sophisticated design with many features, it will make me (the player) need to distract the target function, so I (the player) have to think about what to do and what is the function I want to use. This process means that the game designer has successfully inspired the player's choice of difficulty. These two different game menus and interfaces will be tested after the game is completed, and the final version will be determined based on the user's preferences.</p>
+<p><img src="https://i.imgur.com/FjcxokT.png" alt=""><br>
+<img src="https://i.imgur.com/KGnRrrC.png" alt=""></p>
+<h2 id="build-the-mode-character-waiter-animation">Build the mode - Character Waiter Animation</h2>
+<p>This week I finished the &quot;Waiter&quot; Animation of the game character, although the time is a bit late. However, I will try my best to complete this part of the scene with Alan. Following the original two animations, I can quickly complete this part of the design and debug it in Unity.</p>
+<p><img src="https://i.imgur.com/VabTr7p.png" alt=""><br>
+<img src="https://i.imgur.com/MDA2lz0.png" alt=""><br>
+<img src="https://i.imgur.com/ZsWWeeh.png" alt=""></p>
+<h2 id="build-the-mode-character-face">Build the mode - Character Face</h2>
+<p>In order to make the game characters have more rich emotions, we decided to add different expressions to the faces of the characters after discussion. Therefore, I also added different expression designs in the design of the character skin PSD. Finally, I use Unity to load the characters on different looks (PSD) to see the emoticons. Maybe because the lighting of the entire game scene is dark, the face of the character will be darker. At that time, it involved the lighting adjustment of the entire game scene, so this problem needs to be solved by our group of talented Alan.</p>
+<p><img src="https://i.imgur.com/guZ8xiy.png" alt=""><br>
+<img src="https://i.imgur.com/7q9wQPY.jpg" alt=""></p>
+<h2 id="completed-the-physical-concept-and-interaction-design">Completed the Physical Concept and Interaction Design</h2>
+<p>This week we bought the Block and recorded each size and looked for the right way to interact. I talked to Alison and Lorna about the prototype and sketch of the device. We plan to create a container and put the RFID into it so that users can place blocks and play games. There are different placements in the device.<br>
+In the same way, they all suggested that I use a bookshelf or similar item and put the container on it, then the user can place the Block on the container for the game. Place the RFID Reader in a container so that the user can use the Block directly without letting the user see the entire hardware device. So I have already completed the hardware settings of the device part, and also used Photon with wifi connection. This means that I can use the power bank to complete the entire flexible device and save on wires. At present, I have sketches of two concepts and devices in my mind. I will also decide how to make these two device designs and discuss with my team members, and ask for comments and feedback from other teams in the studio. I hope that we can come up with a perfect way to improve the user experience of our project and find a way for users to learn a specific language.</p>
+<p>Because there is too much content in this part of the design, I will use another blog to do detailed records.</p>
+<h2 id="next-week-plan">Next Week Plan</h2>
+<ol>
+<li>Completed the hardware prototype: Connect two Photon and Sitting the Tag according to the Korean keyboard; [Urgent][Before Tuesday]</li>
+<li>Completed the Installation: build the Frame and other things;</li>
+<li>Laser cutting the support materials;</li>
+<li>Design other support materials; show the inspiration or other things;</li>
+<li>Prepared Exhibition: check the equipment list or another thing;</li>
+</ol>
+<hr>
+<h2 id="reference">Reference</h2>
+<p>[1] <a href="https://www.youtube.com/watch?v=90CZ7Q17sls">Indie Game Developer</a><br>
+[2] <a href="https://www.brainy-bits.com/card-reader-with-an-arduino-rfid-using-the-rc522-module/">Arduino RFID reader using the RC522 Module</a><br>
+[3] <a href="https://github.com/miguelbalboa/rfid">This sketch uses the MFRC522 library</a><br>
+[4] <a href="https://www.addicore.com/v/vspfiles/downloadables/Product%20Downloadables/RFID_RC522/RFIDQuickStartGuide.pdf">RFID Quick Start Guide: Arduino. N/a: Addicore LCC., n.d. PDF.</a><br>
+[5] <a href="https://www.branah.com/korean">Online Korean Keyboard</a><br>
+[6] <a href="https://www.hackster.io/ingo-lohs/rfid-kit-particle-photon-a-first-introduction-9544f1">RFID-Kit &amp; Particle Photon - A First Introduction</a><br>
+[7] <a href="https://gist.github.com/suhajdab/f4c473ad25654e76fc16">Particle Photon + RC522 RFID implant reader</a><br>
+[8] <a href="http://rme-tech.daraghbyrne.me/docs/investigation-1/rfid-objects/">Case Study I: RFID Triggers</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#research-rfid-material">Research RFID Material</a></li>
+<li><a href="#rfid-tech-building">RFID Tech Building</a></li>
+<li><a href="#game-menu">Game Menu</a></li>
+<li><a href="#build-the-mode-character-waiter-animation">Build the mode - Character Waiter Animation</a></li>
+<li><a href="#build-the-mode-character-face">Build the mode - Character Face</a></li>
+<li><a href="#completed-the-physical-concept-and-interaction-design">Completed the Physical Concept and Interaction Design</a></li>
+<li><a href="#next-week-plan">Next Week Plan</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://ChSy990.github.io/post/fluency-journal-13">
+              <h3 class="post-title">
+                Fluency Journal - 13
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Sying</a> | 
+  <a class="rss" href="https://ChSy990.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

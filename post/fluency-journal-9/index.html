@@ -1,0 +1,272 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title> Fluency Journal - 9 | ChSyidea</title>
+<meta name="description" content="Stay Inspired" />
+<link rel="shortcut icon" href="https://ChSy990.github.io/favicon.ico?v=1569791006498">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://ChSy990.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://ChSy990.github.io">
+  <img class="avatar" src="https://ChSy990.github.io/images/avatar.png?v=1569791006498" alt="">
+  </a>
+  <h1 class="site-title">
+    ChSyidea
+  </h1>
+  <p class="site-description">
+    Stay Inspired
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/post/about" class="menu">
+          About
+        </a>
+      
+    
+      
+        <a href="/post/summary" class="menu">
+          Summary
+        </a>
+      
+    
+      
+        <a href="https://ChSy990.github.io/archives" class="menu">
+          Posts
+        </a>
+      
+    
+      
+        <a href="https://ChSy990.github.io/tags" class="menu">
+          Tags
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/ChSy990" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+               Fluency Journal - 9
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-04-28
+              </span>
+              <span>
+                8 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <blockquote>
+<p>No Mid Break - Working in Process<br>
+Still No Break<br>
+Everybody all in the workshop!!!</p>
+</blockquote>
+<p>Maybe it is because this is my last semester at school, and the project time to be completed with a thesis is planned for the same significant period. This middle break has become very busy, and I am at school almost every day. During this time, I mainly completed the practical application of the model and the functional debugging of character modelling. Another primary task is to complete the planning and presentation preparation for the entire prototype. Summarily，I listed the practical task which I need complete below.</p>
+<ul>
+<li>Character Model Implantation</li>
+<li>Physical Prototype Building</li>
+<li>The Presentation Preparation
+<ol>
+<li>The Presentation Slides and the whole context</li>
+<li>The User Journey Map</li>
+<li>The Learning Intention</li>
+<li>The Support Materials</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="working-in-process-character-model-implantation">Working in Process- Character Model Implantation</h2>
+<p>In terms of the issues two last week, I start to learn how to implement the walking animation into Unity Game system and add the control function. Before choosing to use Blender, I heard that the version of Unity could support Blender, then I can see directly model and animation in the later development process without exporting fbx. This led to the successful animation of the characters walking in the first few weeks, and thought that the fdx file could be exported directly. However, it turns out that in Unity, you cannot use fdx and Blender files directly. So I still need to implement this animation effect by creating new functions and control commands in Unity. So I made some attempts to put the Blender file directly into the assets file of Unity, and Unity directly to read. However, then I quickly discovered a new problem. If I link or append other files in my Blender file, I will display any error messages in the free path, and Unity cannot directly recognize Blender's file reference path.</p>
+<p>So I started a new round of bug fixes and new features. Fortunately, I found many solutions to achieve animation. Then I found that there are three main ways to implement the model for developers who already have a model.</p>
+<p>The first way is to set up the model in the model editor such as Blender and edit the action of the model. This way, after importing Unity, such a model can be acted upon. This is also the way I use it now, but in this way, when it is applied, there are problems beyond my ability. I still cannot solve these bugs during the continuous debugging and testing of the code. The second way is to search for the motion action in Unity's asset store if you only have the model, and then take the action of the appropriate model and bring it into the animation control. However, this approach is risky. This approach should be banned from use in course projects, and many suitable plugins cost much money. The third way is to use a model editor such as Blender, create a human model, set up skeletal animation and then set the action of the model in Blender and then pour into Unity.</p>
+<p>So I decided to try a third way to connect the blender file to the Unity. By integrating multiple animations, the state machine is used to play and switch animations. I use the Animator component to control the playback of character animations, and the Animator Controller is a file type that exists as a separate configuration file in Unity to provide profound control over animation playback through scripts. The two core components required are the Animator Controller that controls the animation playback logic and the animated skeleton Avatar object.</p>
+<pre><code>using UnityEngine;
+using System.Collections;
+
+public class TestAnimChange : MonoBehaviour
+{
+    private Animator _animator;
+
+    void Start()
+    {
+        _animator = this.GetComponent&lt;Animator&gt;();
+    }
+    
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            _animator.SetBool(&quot;Walk&quot;, true);
+        }
+        if(Input.GetKeyUp(KeyCode.W))
+        {
+            _animator.SetBool(&quot;Walk&quot;, false);
+        }
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            _animator.SetBool(&quot;Run&quot;, true);
+        }
+        if(Input.GetKeyUp(KeyCode.R))
+        {
+            _animator.SetBool(&quot;Run&quot;, false);
+        }
+    }
+}
+</code></pre>
+<p>The animation of the interface can show like below:</p>
+<figure data-type="image" tabindex="1"><img src="https://i.imgur.com/zD8TRWy.png" alt=""></figure>
+<h2 id="working-in-process-the-presentation-preparation">Working in Process- The Presentation Preparation</h2>
+<p>This time I know that I need to do many things, but from the beginning to face the enormous tasks and complex program functions that I have completed so far, I do not know where to start showing work. Because there are so many things to show, I need to review all the work processes and details from the initial concept of the project. This has led to some details being forgotten, so I need Alan to help me check and verify my work in the process continually.</p>
+<figure data-type="image" tabindex="2"><img src="https://i.imgur.com/bBejxKu.jpg" alt=""></figure>
+<p>Fortunately, I completed the tasks on the target list during vacation time. Thanks to Alan for their remote assistance throughout the process, all three of us completed all the preparations before the Demo Presentation. The list of all targets is as follows:</p>
+<ul>
+<li>The Presentation Slides</li>
+<li>The Interaction Plan</li>
+<li>The User Journey Map</li>
+<li>The Learning Intention</li>
+<li>The Support Materials</li>
+</ul>
+<ol>
+<li>Poster</li>
+<li>Brochures</li>
+<li>Storyboard</li>
+</ol>
+<ul>
+<li>The Digital System Building</li>
+<li>The Physical Building</li>
+</ul>
+<p>After reviewing the content of this presentation and the time spent on the evaluation, I found that the workload was too large. The amount of work prepared is beyond the expectations and capabilities of Alison and me. So I temporarily requested Alan's assistance and assigned tasks to the team members according to each person's time. The detailed tasks are assigned as shown below. At the same time, when I use the Gantt chart, the overall mission planning is more precise.</p>
+<h2 id="the-user-journey-map">The User Journey Map</h2>
+<p>With interaction paradigms and interaction patterns, I also need to be responsible for user journey maps and designs. For our demo, we decided to create a customer journey for the main character. Based on our target audience, we decided to use a Korean beginner who encountered difficulties as a user group image. He wants to learn Korean but finds it difficult to find a suitable way to learn and to continue learning. In the process, I noticed the process of starting to empathize with the user and understand the psychological changes of the user as a designer. It is indeed a valuable tool that helps us understand the needs of users, the feelings and expectations of users. Find the pain points and solutions of the design in the process of psychological change. I also noticed that when I completed each step of the process, I was able to identify gaps and features in the system. For example, at the beginning of the concept, we thought that a feature was applicable to the user, but in the actual experience, the user might not choose to use it at all.<br>
+<img src="https://i.imgur.com/fpGZPpy.png" alt=""></p>
+<h2 id="the-poster-design">The Poster Design</h2>
+<p><img src="https://i.imgur.com/uWeTT9K.jpg" alt=""><br>
+<img src="https://i.imgur.com/a5Gtuf4.jpg" alt=""></p>
+<h2 id="the-brochures-design">The Brochures Design</h2>
+<p><img src="https://i.imgur.com/GaHg7Wz.jpg" alt=""><br>
+<img src="https://i.imgur.com/CTqw96I.jpg" alt=""></p>
+<h2 id="working-in-process-issues-3">Working in Process- Issues 3</h2>
+<p>In terms of the Walk animation design, I found the character always walking in a different direction，which always made me wanna cry and felt too tired.</p>
+<p>After selecting the Walk animation in the Project panel, I can preview the Walk animation in the Inspector panel. However, I found that the character has an absolute offset in the X-axis direction during walking. At this point, I try to adjust the Offset offset so that the Average Velocity attribute has a zero amount of motion on the x-axis. I want to control the character model to run along the x-axis in this way to produce an angular offset.</p>
+<h2 id="reference">Reference</h2>
+<p>[1] http://www.cnblogs.com/hammerc/p/4828774.html</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#working-in-process-character-model-implantation">Working in Process- Character Model Implantation</a></li>
+<li><a href="#working-in-process-the-presentation-preparation">Working in Process- The Presentation Preparation</a></li>
+<li><a href="#the-user-journey-map">The User Journey Map</a></li>
+<li><a href="#the-poster-design">The Poster Design</a></li>
+<li><a href="#the-brochures-design">The Brochures Design</a></li>
+<li><a href="#working-in-process-issues-3">Working in Process- Issues 3</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://ChSy990.github.io/post/fluency-journal-8">
+              <h3 class="post-title">
+                Fluency Journal - 8
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Sying</a> | 
+  <a class="rss" href="https://ChSy990.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
